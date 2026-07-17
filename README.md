@@ -13,9 +13,9 @@
 
 
 <h3 align="center">
-  🌐 <a href="https://codecove01-netizen.github.io/Fylo-Data-Storage-Component/">Live Demo</a>
+  🌐 <a href="https://codecove01-netizen.github.io/Fylo-Data-Storage-Component-Frontend-Mentor/">Live Demo</a>
   &nbsp;|&nbsp;
-  📂 <a href="https://github.com/codecove01-netizen/Fylo-Data-Storage-Component">Source Code</a>
+  📂 <a href="https://github.com/codecove01-netizen/Fylo-Data-Storage-Component-Frontend-Mentor">Source Code</a>
   &nbsp;|&nbsp;
   🎯 <a href="https://www.frontendmentor.io/challenges/fylo-data-storage-component-1dZPRbV5n">Challenge</a>
 </h3>
