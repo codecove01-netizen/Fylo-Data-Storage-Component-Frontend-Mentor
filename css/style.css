@@ -29,3 +29,188 @@ img{
   white-space: nowrap;
   border: 0;
 }
+
+/* =============================
+            CUSTON PROPERTIES
+================================*/
+:root{
+    /* COLORS */
+    --gradient: linear-gradient(to right,hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    --blue-200: hsl(243, 100%, 93%);
+    --grayishBlue: hsl(229, 7%, 55%);
+    --blue-850: hsl(228, 56%, 26%);
+    --blue-accent : hsl(229, 59%, 16%);
+    --blue-950: hsl(229, 57%, 11%);
+    --rose: hsl(335, 100%, 65%);
+
+    /* FONT SIZE */
+    --font-size-14:0.88rem;
+
+    /* FONT WEIGHT */
+    --font-weight-400: 400;
+    --font-weight-700: 700;
+
+    /* FONT FAMILY */
+    --font-family-raleway: "Raleway", sans-serif;
+}
+
+/* =============================
+            GLOBAL STYLES
+================================*/
+body{
+    font-size: var(--font-size-14);
+    font-weight: var(--font-weight-400);
+    font-family: var(--font-family-raleway);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:url('../images/bg-mobile.png') no-repeat;
+    background-size: cover;
+    background-color: var(--blue-950);
+    color: var(--blue-200);
+}
+
+/* =============================
+            LAYOUT
+================================*/
+
+/* MAIN CONTAINER */
+.main-container{
+    min-inline-size: 20.31rem;    
+    margin-block-start: 2rem;
+} 
+
+/* IMAGE CONTAINER */
+.image-container{
+    background-color: var(--blue-850);
+    padding: 2.4rem 2.5rem 2.4rem 2.5rem;
+    border-radius: 0.63rem;
+    border-top-right-radius: 6.5rem;
+}
+.image-box{
+    background-color: var(--blue-950);
+    width: 3rem;
+    padding-block: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;    
+}
+.icon-container{
+    display: flex;
+    margin-block-start: 2.2rem;
+    column-gap: 1rem;
+}
+.document-icon{
+    width:45%;
+    height:90%;
+}
+.folder-icon{
+    width:50%;
+    height:75%;
+}
+.upload-icon{
+    width:53%;
+    height:70%;
+}
+
+/* STORAGE CONTAINER */
+.storage-container{
+    background-color: var(--blue-850);
+    padding-block: 1.8rem 2.7rem;
+    padding-inline: 1rem;
+    margin-block-start: 1rem;
+    border-radius: 0.63rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.used-data{
+    font-size: 0.9rem;
+    align-self: center;
+}
+.used-value{
+    font-weight: var(--font-weight-700);
+}
+.storage{
+    margin-block-start: 1rem;    
+    padding-inline: 1rem;    
+}
+.storage-bar{
+    width: 100%;
+    height: 1.3rem;
+    padding: 0.16rem 0.20rem 0.16rem 0.20rem;
+    border-radius: 62.44rem;
+    background-color: var(--blue-accent);    
+}
+.storage-fill{
+    background: var(--gradient);
+    height: 100%;
+    width: 81.5%;
+    border-radius: inherit;
+    position: relative;
+}
+.storage-dot{
+    position: absolute;
+    width: 0.65rem;
+    height: 0.65rem;
+    border-radius: 50%;
+    background-color: var(--blue-200);
+    right: 0.15rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.storage-data{
+    margin-block: 0.6rem;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;      
+    padding-inline: 0.8rem;
+    font-weight: var(--font-weight-700);
+}
+
+/* DATA */
+.data-remained{
+    width: 11.44rem;
+    border-radius: 0.63rem;    
+    padding: 0.6rem 1rem 0.7rem 1rem;    
+    background-color: var(--blue-200);    
+    text-align: center;
+    position: absolute;
+    top: 68.9%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.data-gb{
+    color: var(--blue-950);
+    font-weight: var(--font-weight-700);
+    font-size: 2.5rem;
+}
+.gb{
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: var(--grayishBlue);
+}
+
+/* =============================
+            FOOTER
+================================*/
+.attribution{
+    margin-block-start: 2rem;
+    color: var(--blue-200);
+}
+.attribution a{
+    text-decoration: none;
+    color: var(--grayishBlue);
+    font-weight: var(--font-weight-700);
+}
+.attribution a:hover,
+.attribution a:focus-visible{
+    outline: 0.06rem solid var(--grayishBlue);
+    outline-offset: 0.06rem;
+    color: var(--rose);
+}
