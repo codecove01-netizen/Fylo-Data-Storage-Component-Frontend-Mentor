@@ -214,3 +214,61 @@ body{
     outline-offset: 0.06rem;
     color: var(--rose);
 }
+
+/* =============================
+            DESKTOP STYLES
+================================*/
+@media screen and (min-width:48rem) {  
+    body{
+        background: url('../images/bg-desktop.png') bottom center no-repeat;
+        background-size: 100% 50vh;
+        background-color: var(--blue-950);
+    }
+    .main-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 1.8rem;
+    }
+    .image-container{
+        width: 22rem;
+        margin-block-start: 0.7rem;
+    }
+    .storage-container{
+        width: 33.8rem;
+        padding-block: 2.4rem 2rem;
+    }
+    .used-data{
+        margin-inline-end: auto;
+        padding-inline: 1.4rem;    
+    }
+    .storage{
+        padding-inline: 1.4rem;    
+    }
+    .storage-data{
+        margin-block: 0.4rem;
+        padding-inline: 1.5rem;
+    }
+    .data-remained{
+        border-radius: 0.63rem 0.63rem 0 0.63rem;    
+        padding: 0.8rem 0.8rem 0.7rem 0.8rem;    
+        position: absolute;
+        top: -3rem;
+        right: 2.5rem;
+        left: auto;
+        transform: none;
+    }
+
+    /* TOOLTIP */
+    .data-remained::after{
+        content: "";
+        position: absolute;
+        bottom: -1.25rem;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-left: 1.25rem solid transparent;
+        border-top: 1.25rem solid var(--blue-200);
+    }
+}
